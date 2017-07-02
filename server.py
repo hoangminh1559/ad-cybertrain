@@ -53,10 +53,7 @@ def check_flag(submit_team_id,chal_id,flag):
 				#Give point for submit team for correct flag and add that team to team_submit in available
 				cursor.execute("SELECT score FROM team WHERE team_id=%s", (submit_team_id,))
 				score = cursor.fetchone()
-				print score
-				print challenge_table[2]
 				score = score[0] + challenge_table[2]
-				print score
 				cursor.execute("UPDATE team SET score=%s WHERE team_id=%s", (score, submit_team_id))	
 				cursor.execute("UPDATE available SET team_submit=concat(team_submit,%s,',') WHERE chal_id=%s", (submit_team_id,chal_id))
 				
@@ -64,7 +61,6 @@ def check_flag(submit_team_id,chal_id,flag):
 				cursor.execute("SELECT score FROM team WHERE team_id=%s", (challenge_table[0],))
 				score = cursor.fetchone()
 				score = score[0] - challenge_table[2]
-				print score
 				cursor.execute("UPDATE team SET score=%s WHERE team_id=%s", (score, challenge_table[0]))
 				
 				connect.commit()
