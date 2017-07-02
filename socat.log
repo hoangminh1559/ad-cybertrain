@@ -1,0 +1,20 @@
+2017/06/30 14:02:28 socat[3612] E bind(3, {AF=2 0.0.0.0:8001}, 16): Address already in use
+2017/07/02 05:59:00 socat[29769] E getaddrinfo("(null)", "/home/chal1/chall1", {1,2,1,6}, {}): Servname not supported for ai_socktype
+2017/07/02 05:59:21 socat[29772] E getaddrinfo("(null)", "/home/chal2/chall2", {1,2,1,6}, {}): Servname not supported for ai_socktype
+2017/07/02 14:09:30 socat[5275] E getaddrinfo("(null)", "/home/chal2/chall2", {1,2,1,6}, {}): Servname not supported for ai_socktype
+> 2017/07/02 14:14:42.401070  length=4 from=0 to=3
+123
+> 2017/07/02 14:14:47.148821  length=8 from=0 to=7
+5365645
+> 2017/07/02 14:14:52.840658  length=3 from=0 to=2
+%x
+> 2017/07/02 14:15:02.520819  length=9 from=0 to=8
+%x.[D.[D
+> 2017/07/02 14:15:22.397102  length=4 from=0 to=3
+%x 
+> 2017/07/02 14:15:40.179748  length=5 from=0 to=4
+`123
+> 2017/07/02 14:19:54.354918  length=18 from=0 to=17
+'%08x-%08x-%08x-'
+> 2017/07/02 14:20:10.547895  length=16 from=0 to=15
+%08x-%08x-%08x-
