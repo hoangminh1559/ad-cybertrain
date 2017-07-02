@@ -107,9 +107,6 @@ while (1):
 		file_export(chal,conn)
 	send_flag('192.168.32.11',app1) 
 	send_flag('192.168.32.13',app2)
-	print_table(conn,'team')
-	print_table(conn,'challenge')
-	print_table(conn,'available')
 	disconnect_db(conn)
 	time.sleep(1800)
 
